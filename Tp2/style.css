@@ -1,0 +1,82 @@
+/* Mise en forme générale */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #a6d3fa;
+}
+
+/* Mise en forme du titre */
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Mise en forme de la liste de comptes */
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.account {
+  margin: 10px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 0 5px #cbcbcb;
+}
+
+.fruit {
+  display: inline-block;
+  transition: transform 20s;
+}
+
+.rotate {
+  transform: rotate(3600deg);
+}
+
+/* Style pour index */
+
+form {
+  margin: 50px auto;
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #ffffff;
+  background-color: #75859b;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="password"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #000000;
+  background-color: #ffffff;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f6f6f6;
+  color: #000000;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background-color: #9a9a9a;
+}
