@@ -71,8 +71,14 @@ class ABR:
             return -1
         else:
             return 1 + max((self.gauche.hauteur() if self.gauche is not None else -1), (self.droite.hauteur() if self.droite is not None else -1))
-# créer un arbre binaire de recherche de taille 25 et de hauteur 5
-arbre = ABR(50, ABR(25, ABR(10, ABR(5), ABR(15)), ABR(35, ABR(30), ABR(40, ABR(37), ABR(45, ABR(42), ABR(48))))), ABR(75, ABR(60, ABR(55), ABR(65, ABR(63), ABR(70))), ABR(90, ABR(85, ABR(80), ABR(87)), ABR(100, ABR(95), ABR(110, ABR(105), ABR(120))))))
+# créer un arbre binaire de recherche...
+arbre = ABR(50, 
+            ABR(25, 
+                ABR(10, ABR(5), ABR(15)), 
+                ABR(35, ABR(30), ABR(40, ABR(37), ABR(45, ABR(42), ABR(48))))), 
+            ABR(75, 
+                ABR(60, ABR(55), ABR(65, ABR(63), ABR(70))), 
+                ABR(90, ABR(85, ABR(80), ABR(87)), ABR(100, ABR(95), ABR(110, ABR(105), ABR(120))))))
 
 
 # afficher la racine de l'arbre
