@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemples JavaScript</title>
+</head>
+<body>
+
+	<!-- Bouton qui affiche une boîte d'alerte -->
+	<button onclick="alert('Bonjour!')">Cliquez ici</button>
+
+	<!-- Lien qui appelle une fonction JavaScript pour afficher une boîte d'alerte -->
+	<a href="#" onmouseover="afficherAlerte('Texte a afficher')">Passez la souris ici</a>
+
+	<!-- Tableau de 10x10 contenant des numéros de ligne et de colonne -->
+	<table>
+		<tbody>
+			<script>
+				function afficherAlerte(texte) {
+				  alert(texte);
+				}
+				for (let i = 1; i <= 10; i++) {
+					document.write("<tr>");
+					for (let j = 1; j <= 10; j++) {
+						document.write("<td>" + i + "," + j + "</td>");
+					}
+					document.write("</tr>");
+				}
+			</script>
+		</tbody>
+	</table>
+
+</body>
+</html>
